@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@color/cardview_light_background"
     tools:context=".ui.AskmeActivity"
-    tools:deviceIds="wear" >
+     >
 
     <TextView
         android:id="@+id/textView12"
