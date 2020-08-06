@@ -17,7 +17,7 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         Login = findViewById(R.id.LoginButton);
-        Register = findViewById(R.id.RegisterButton);
+        Register = findViewById(R.id.RegistrationPageButton);
 
         Login.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -32,6 +32,8 @@ public class LoginActivity extends AppCompatActivity {
                 RegisterFunction();
             }
         });
+
+
     }
 
     private void RegisterFunction() {
