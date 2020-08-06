@@ -1,22 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background"
     tools:context=".RegisterActivity">
-    <ImageView
-        android:id="@+id/registerView"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/laptop_buy_logo" />
 
-    <TextView
+    <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/registerView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/laptop_buy_logo" />
+
+        <TextView
         android:id="@+id/RegisterActivityTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -31,8 +37,8 @@
 
     <EditText
         android:id="@+id/FNameInput"
-        android:layout_width="350dp"
-        android:layout_height="50dp"
+        android:layout_width="340dp"
+        android:layout_height="40dp"
         android:background="@drawable/borderstyle"
         android:ems="10"
         android:gravity="center"
@@ -48,8 +54,8 @@
 
     <EditText
         android:id="@+id/LNameInput"
-        android:layout_width="350dp"
-        android:layout_height="50dp"
+        android:layout_width="340dp"
+        android:layout_height="40dp"
         android:background="@drawable/borderstyle"
         android:ems="10"
         android:gravity="center"
@@ -65,8 +71,8 @@
 
     <EditText
         android:id="@+id/EmailInput"
-        android:layout_width="350dp"
-        android:layout_height="50dp"
+        android:layout_width="340dp"
+        android:layout_height="40dp"
         android:background="@drawable/borderstyle"
         android:ems="10"
         android:gravity="center"
@@ -82,8 +88,8 @@
 
     <EditText
         android:id="@+id/PasswordInput"
-        android:layout_width="350dp"
-        android:layout_height="50dp"
+        android:layout_width="340dp"
+        android:layout_height="40dp"
         android:background="@drawable/borderstyle"
         android:ems="10"
         android:gravity="center"
@@ -99,8 +105,8 @@
 
     <EditText
         android:id="@+id/ConfirmPasswordInput"
-        android:layout_width="350dp"
-        android:layout_height="50dp"
+        android:layout_width="340dp"
+        android:layout_height="40dp"
         android:background="@drawable/borderstyle"
         android:ems="10"
         android:gravity="center"
@@ -117,7 +123,7 @@
     <Button
         android:id="@+id/RegisterButton"
         android:layout_width="200dp"
-        android:layout_height="50dp"
+        android:layout_height="40dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="104dp"
         android:background="@drawable/buttonshape"
@@ -130,7 +136,7 @@
     <Button
         android:id="@+id/LoginPageButton"
         android:layout_width="200dp"
-        android:layout_height="50dp"
+        android:layout_height="40dp"
         android:layout_marginTop="12dp"
         android:layout_marginEnd="104dp"
         android:background="@drawable/buttonshape"
@@ -141,4 +147,5 @@
         app:layout_constraintTop_toBottomOf="@+id/RegisterButton" />
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
