@@ -6,8 +6,6 @@
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
-    <string name="app_logo_name">LaptopBUY</string>
-    <string name="app_logo_slogan">Best Laptop deals in North America</string>
 
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
@@ -25,6 +23,6 @@
     <string name="canada_s_top_100_employers_2017_2018_2019">Canada\'s Top 100 Employers(2017,2018,2019)</string>
     <string name="join_us">JOIN US</string>
     <string name="todo">TODO</string>
-    <string name="tod0o">TODO</string>
-    <string name="todo0">TODO</string>
+    <string name="todo">TODO</string>
+    <string name="todo">TODO</string>
 </resources>
