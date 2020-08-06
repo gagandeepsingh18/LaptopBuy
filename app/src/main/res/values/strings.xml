@@ -10,4 +10,15 @@
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+    <string name="AboutUs">About Us</string>
+    <string name="we_believe_technology_is_amazing_and_we_aspire_to_enhance_our_customers_lives_through_technology_anywhere_anytime">We believe technology is amazing, and we aspire to enhance our customers’ lives through technology – anywhere, anytime.</string>
+    <string name="our_vision">OUR VISION</string>
+    <string name="our_company">OUR COMPANY</string>
+    <string name="wholly_owned_subsidiary_canada_s_largest_electronic_retailer">Wholly Owned subsidiary || CANADA\'s largest electronic retailer</string>
+    <string name="_150_stores_most_visited_laptop_retailer_in_canada">150+ stores || Most visited laptop retailer in Canada</string>
+    <string name="our_people">OUR PEOPLE</string>
+    <string name="our_presence">OUR PRESENCE</string>
+    <string name="_12_000_canadians_employed_nationwide">12,000 Canadians employed nationwide</string>
+    <string name="our_success">OUR SUCCESS</string>
+    <string name="canada_s_top_100_employers_2017_2018_2019">Canada\'s Top 100 Employers(2017,2018,2019)</string>
 </resources>
