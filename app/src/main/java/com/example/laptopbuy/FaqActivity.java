@@ -22,5 +22,7 @@ public class FaqActivity extends AppCompatActivity {
     }
     public void AskMe(View view){
         Intent intent= new Intent(this, AskmeActivity.class);
+    }public void AboutUs(View view){
+        Intent intent=new Intent(this,AboutusActivity.class);
     }
 }
