@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+    <ImageView
+        android:id="@+id/registerView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/laptop_buy_logo" />
+
+    <TextView
+        android:id="@+id/RegisterActivityTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="76dp"
+        android:text="Create An Account"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registerView" />
+
+    <EditText
+        android:id="@+id/FNameInput"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:background="@drawable/borderstyle"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter your name"
+        android:inputType="textEmailAddress"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RegisterActivityTextView"
+        app:layout_constraintVertical_bias="0.068" />
+
+    <EditText
+        android:id="@+id/LNameInput"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:background="@drawable/borderstyle"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter your surname"
+        android:inputType="textEmailAddress"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FNameInput"
+        app:layout_constraintVertical_bias="0.062" />
+
+    <EditText
+        android:id="@+id/EmailInput"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:background="@drawable/borderstyle"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter your email"
+        android:inputType="textEmailAddress"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LNameInput"
+        app:layout_constraintVertical_bias="0.067" />
+
+    <EditText
+        android:id="@+id/PasswordInput"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:background="@drawable/borderstyle"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter your password"
+        android:inputType="textPassword"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EmailInput"
+        app:layout_constraintVertical_bias="0.116" />
+
+    <EditText
+        android:id="@+id/ConfirmPasswordInput"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:background="@drawable/borderstyle"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Confirm your password"
+        android:inputType="textPassword"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PasswordInput"
+        app:layout_constraintVertical_bias="0.116" />
+
+    <Button
+        android:id="@+id/RegisterButton"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="104dp"
+        android:background="@drawable/buttonshape"
+        android:backgroundTint="#64b5f6"
+        android:text="Register"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ConfirmPasswordInput" />
+
+    <Button
+        android:id="@+id/LoginPageButton"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="104dp"
+        android:background="@drawable/buttonshape"
+        android:backgroundTint="#2286c3"
+        android:text="Login"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RegisterButton" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
