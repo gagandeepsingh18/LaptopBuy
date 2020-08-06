@@ -15,7 +15,7 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/laptopBuyLogo" />
+        app:srcCompat="@drawable/laptop_buy_logo" />
 
     <TextView
         android:id="@+id/logoName"
