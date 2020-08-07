@@ -4,17 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AdressDelievery_Activity">
-
-
-
+    tools:context=".AdressDelievery_Activity"
+   >
 
 
     <ScrollView
         android:id="@+id/scrolling"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:ignore="MissingConstraints">
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -22,12 +19,12 @@
             android:layout_margin="10dp"
             android:layout_marginTop="0dp"
             android:alpha="1"
+            android:background="@color/background"
             android:orientation="vertical"
             android:paddingLeft="0dp"
             android:paddingTop="5dp"
             android:paddingRight="0dp"
             android:paddingBottom="20dp"
-            android:background="@color/background"
             android:weightSum="10">
 
             <LinearLayout
@@ -50,7 +47,6 @@
             </LinearLayout>
 
 
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -62,15 +58,15 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textStyle="bold"
-                    android:text="Apartment Building Adress" />
+                    android:text="Apartment Building Adress"
+                    android:textStyle="bold" />
 
                 <EditText
                     android:id="@+id/buildingadress"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text=""
                     android:hint="Enter Address here"
+                    android:text=""
                     android:textSize="20dp"
                     android:textStyle="bold" />
             </LinearLayout>
@@ -85,16 +81,16 @@
 
                 <TextView
                     android:layout_width="match_parent"
-                    android:textStyle="bold"
                     android:layout_height="wrap_content"
-                    android:text="Zip Code" />
+                    android:text="Zip Code"
+                    android:textStyle="bold" />
 
                 <EditText
                     android:id="@+id/zipcode"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text=""
                     android:hint="Enter Zip code here"
+                    android:text=""
                     android:textSize="20dp"
                     android:textStyle="bold" />
             </LinearLayout>
@@ -108,20 +104,19 @@
 
                 <TextView
                     android:layout_width="match_parent"
-                    android:textStyle="bold"
                     android:layout_height="wrap_content"
-                    android:text="City" />
+                    android:text="City"
+                    android:textStyle="bold" />
 
                 <EditText
                     android:id="@+id/city"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text=""
                     android:hint="Enter City here"
+                    android:text=""
                     android:textSize="20dp"
                     android:textStyle="bold" />
             </LinearLayout>
-
 
 
             <LinearLayout
@@ -136,14 +131,14 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textStyle="bold"
-                    android:text="State/Province" />
+                    android:text="State/Province"
+                    android:textStyle="bold" />
 
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text=""
                     android:hint="Enter State/Province here"
+                    android:text=""
                     android:textSize="20dp"
                     android:textStyle="bold" />
             </LinearLayout>
@@ -153,7 +148,6 @@
                 android:id="@+id/proceeding"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/lyout"
                 android:layout_alignParentBottom="true"
                 android:layout_marginBottom="0dp"
                 android:text="Proceed To Payment"
@@ -164,9 +158,6 @@
         </LinearLayout>
 
     </ScrollView>
-
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
