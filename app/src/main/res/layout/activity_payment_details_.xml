@@ -152,19 +152,17 @@
                     android:textSize="20dp"
                     android:textStyle="bold" />
             </LinearLayout>
+
+
             <Button
-                android:id="@+id/CnPayment"
-                android:layout_width="200dp"
-                android:layout_height="50dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="104dp"
+                android:id="@+id/payconfirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="0dp"
+                android:text="Payment Confirm"
                 android:textColor="@color/colorPrimary"
-                android:text="Confirm payment"
-                app:layout_constraintEnd_toEndOf="parent"
-
-
-
-
+                android:textSize="20dp" />
         </LinearLayout>
     </ScrollView>
 
