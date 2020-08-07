@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.laptopbuy">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/laptop_buy_logo"
@@ -9,7 +12,8 @@
         android:roundIcon="@drawable/laptop_buy_logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".PaymentDetails_Activity"></activity>
+
+        <activity android:name=".CartForm_Activity"></activity>
         <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

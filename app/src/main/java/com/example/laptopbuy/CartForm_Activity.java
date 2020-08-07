@@ -8,12 +8,13 @@ import android.view.View;
 import android.widget.Button;
 
 public class CartForm_Activity extends AppCompatActivity {
-    Button BTN=findViewById(R.id.proceed);
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cartform);
+        setContentView(R.layout.cartform);
+        Button BTN=findViewById(R.id.proceed);
         BTN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
