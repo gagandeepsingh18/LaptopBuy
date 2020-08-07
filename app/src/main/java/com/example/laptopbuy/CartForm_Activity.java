@@ -7,17 +7,17 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class laptopOpened extends AppCompatActivity {
+public class CartForm_Activity extends AppCompatActivity {
     Button BTN=findViewById(R.id.proceed);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_laptop_opened);
+        setContentView(R.layout.activity_CartForm);
         BTN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent tnt=new Intent(laptopOpened.this,adressDelievery.class);
+                Intent tnt=new Intent(CartForm_Activity.this, AdressDelievery_Activity.class);
                 startActivity(tnt);
                 finish();
             }

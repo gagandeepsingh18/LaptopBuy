@@ -4,11 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class adressDelievery extends AppCompatActivity {
+public class PaymentDetails_Activity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_adress_delievery);
+        setContentView(R.layout.activity_payment_details_);
     }
 }
