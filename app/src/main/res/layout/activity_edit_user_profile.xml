@@ -23,7 +23,7 @@
 
         android:layout_width="129dp"
         android:layout_height="30dp"
-        android:layout_marginleft="20dp"
+
         android:hint="Your Name"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"

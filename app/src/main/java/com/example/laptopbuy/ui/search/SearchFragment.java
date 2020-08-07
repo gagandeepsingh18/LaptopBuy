@@ -1,4 +1,4 @@
-package com.example.laptopbuy.ui.slideshow;
+package com.example.laptopbuy.ui.search;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,22 +14,22 @@ import androidx.lifecycle.ViewModelProviders;
 
 import com.example.laptopbuy.R;
 
-public class SlideshowFragment extends Fragment {
+public class SearchFragment extends Fragment {
 
-    private SlideshowViewModel slideshowViewModel;
+    private SearchViewModel slideshowViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        slideshowViewModel =
-                ViewModelProviders.of(this).get(SlideshowViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_slideshow, container, false);
+        /*slideshowViewModel =
+                ViewModelProviders.of(this).get(SearchViewModel.class);
+        View root = inflater.inflate(R.layout.fragment_search, container, false);
         final TextView textView = root.findViewById(R.id.text_slideshow);
         slideshowViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);
             }
-        });
-        return root;
-    }
+        });*/
+        View view = inflater.inflate(R.layout.fragment_home, container, false);
+        return view;    }
 }

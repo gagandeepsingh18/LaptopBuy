@@ -5,13 +5,13 @@
     <string name="nav_header_title">Hi, Gagandeep</string>
     <string name="nav_header_subtitle">Welcome to LaptopBUY</string>
     <string name="nav_header_desc">Navigation header</string>
-    <string name="action_settings">Settings</string>
+    <string name="action_logout">Logout</string>
     <string name="app_logo_name">LaptopBUY</string>
     <string name="app_logo_slogan">Buy the best Laptops in North America</string>
 
     <string name="menu_home">Home</string>
-    <string name="menu_gallery">Gallery</string>
-    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_favourite">Favourite</string>
+    <string name="menu_search">Search</string>
     <string name="AboutUs">About Us</string>
     <string name="we_believe_technology_is_amazing_and_we_aspire_to_enhance_our_customers_lives_through_technology_anywhere_anytime">We believe technology is amazing, and we aspire to enhance our customers’ lives through technology – anywhere, anytime.</string>
     <string name="our_vision">OUR VISION</string>
