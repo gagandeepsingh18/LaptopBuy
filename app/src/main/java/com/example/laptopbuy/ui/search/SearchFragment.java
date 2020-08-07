@@ -30,6 +30,7 @@ public class SearchFragment extends Fragment {
                 textView.setText(s);
             }
         });*/
-        View view = inflater.inflate(R.layout.fragment_home, container, false);
-        return view;    }
+        View view = inflater.inflate(R.layout.fragment_search, container, false);
+        return view;
+    }
 }

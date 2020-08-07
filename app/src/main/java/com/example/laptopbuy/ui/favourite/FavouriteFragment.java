@@ -20,7 +20,7 @@ public class FavouriteFragment extends Fragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        galleryViewModel =
+       /* galleryViewModel =
                 ViewModelProviders.of(this).get(FavouriteViewModel.class);
         View root = inflater.inflate(R.layout.fragment_favourite, container, false);
         final TextView textView = root.findViewById(R.id.text_gallery);
@@ -30,6 +30,9 @@ public class FavouriteFragment extends Fragment {
                 textView.setText(s);
             }
         });
-        return root;
+        return root; */
+        View view = inflater.inflate(R.layout.fragment_favourite, container, false);
+        return view;
+
     }
 }
