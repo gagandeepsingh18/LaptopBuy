@@ -6,17 +6,58 @@
     android:layout_height="match_parent"
     tools:context=".ui.favourite.FavouriteFragment">
 
-    <TextView
-        android:id="@+id/text_gallery"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/ProductImage"
+            android:layout_width="120dp"
+            android:layout_height="150dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="6dp"
+            app:srcCompat="@drawable/laptop_buy_logo"
+            />
+
+        <TextView
+            android:id="@+id/ProductTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="159dp"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:text= "Laptop Number 1"
+            />
+
+        <TextView
+            android:id="@+id/ProductPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="156dp"
+            android:layout_marginTop="54dp"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:text="$ 500"/>
+
+        <TextView
+            android:id="@+id/ProductDescription"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="153dp"
+            android:layout_marginTop="101dp"
+            android:textSize="12sp"
+            android:text="Intel 15 processor"/>
+
+
+    </RelativeLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
+
