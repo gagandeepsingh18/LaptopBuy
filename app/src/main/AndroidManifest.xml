@@ -9,7 +9,8 @@
         android:roundIcon="@drawable/laptop_buy_logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".PaymentDetails_Activity"></activity>
+
+        <activity android:name=".CartForm_Activity"></activity>
         <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
