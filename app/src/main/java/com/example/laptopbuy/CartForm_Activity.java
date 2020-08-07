@@ -13,7 +13,7 @@ public class CartForm_Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_CartForm);
+        setContentView(R.layout.activity_cartform);
         BTN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
