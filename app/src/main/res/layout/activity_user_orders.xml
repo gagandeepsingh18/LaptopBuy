@@ -16,15 +16,13 @@
 
     <ListView
         android:id="@+id/UserOdrlistView"
-        android:layout_width="408dp"
-        android:layout_height="586dp"
+        android:layout_width="404dp"
+        android:layout_height="580dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/include"
-        app:layout_constraintVertical_bias="0.393">
-
-    </ListView>
+        app:layout_constraintVertical_bias="0.393"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
