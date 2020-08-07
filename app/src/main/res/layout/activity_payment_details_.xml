@@ -6,4 +6,30 @@
     android:layout_height="match_parent"
     tools:context=".PaymentDetails_Activity">
 
+    <ScrollView
+        android:id="@+id/sclng"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginTop="0dp"
+            android:alpha="1"
+            android:orientation="vertical"
+            android:paddingLeft="0dp"
+            android:paddingTop="5dp"
+            android:paddingRight="0dp"
+            android:paddingBottom="20dp"
+            android:background="@color/background"
+            android:weightSum="10">
+
+           
+
+
+        </LinearLayout>
+    </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
