@@ -4,49 +4,98 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".adressDelievery">
-
-
-
-
+    tools:context=".CartForm_Activity">
 
     <ScrollView
-        android:id="@+id/scrolling"
+        android:id="@+id/scr"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         tools:ignore="MissingConstraints">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:layout_marginTop="0dp"
+            android:layout_margin="0dp"
             android:alpha="1"
             android:orientation="vertical"
             android:paddingLeft="0dp"
-            android:paddingTop="5dp"
+            android:paddingTop="0dp"
             android:paddingRight="0dp"
-            android:paddingBottom="20dp"
+            android:paddingBottom="0dp"
+            android:background="@color/background"
             android:weightSum="10">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
                 android:layout_marginTop="0dp"
-                android:orientation="vertical"
-                android:padding="20dp">
+                android:layout_marginRight="5dp"
+                android:background="@color/colorPrimary"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
 
 
                 <TextView
-                    android:layout_width="match_parent"
+                    android:layout_width="308dp"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@color/colorPrimary"
                     android:gravity="center"
-                    android:text="Information Reegarding Delievery"
-                    android:textColor="@color/colorPrimary"
-                    android:textSize="18dp"
+                    android:layout_marginLeft="40dp"
+                    android:text="Details Of Selected Product"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
                     android:textStyle="bold" />
 
+
+
             </LinearLayout>
+
+
+
+            <ImageView
+                android:id="@+id/pimg"
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:padding="20dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="0dp"
+                android:src="@drawable/hp">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:text="Product Information"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Laptop Name" />
+
+                <TextView
+                    android:id="@+id/pnm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hp"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
 
 
 
@@ -57,19 +106,16 @@
                 android:orientation="vertical"
                 android:padding="20dp">
 
-
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textStyle="bold"
-                    android:text="Apartment Building Adress" />
+                    android:text="Laptop Configuaration" />
 
-                <EditText
-                    android:id="@+id/buildingadress"
+                <TextView
+                    android:id="@+id/pconfig"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text=""
-                    android:hint="Enter Address here"
+                    android:text="8gb ram, Intel i5 5th generation"
                     android:textSize="20dp"
                     android:textStyle="bold" />
             </LinearLayout>
@@ -84,83 +130,31 @@
 
                 <TextView
                     android:layout_width="match_parent"
-                    android:textStyle="bold"
                     android:layout_height="wrap_content"
-                    android:text="Zip Code" />
-
-                <EditText
-                    android:id="@+id/zipcode"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text=""
-                    android:hint="Enter Zip code here"
-                    android:textSize="20dp"
-                    android:textStyle="bold" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="0dp"
-                android:orientation="vertical"
-                android:padding="20dp">
+                    android:text="Laptop Cost" />
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:textStyle="bold"
-                    android:layout_height="wrap_content"
-                    android:text="City" />
-
-                <EditText
-                    android:id="@+id/city"
+                    android:id="@+id/laptopcost"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text=""
-                    android:hint="Enter City here"
-                    android:textSize="20dp"
-                    android:textStyle="bold" />
-            </LinearLayout>
-
-
-
-            <LinearLayout
-                android:id="@+id/lyout"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="0dp"
-                android:orientation="vertical"
-                android:padding="20dp">
-
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textStyle="bold"
-                    android:text="State/Province" />
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text=""
-                    android:hint="Enter State/Province here"
+                    android:text="$ 2000"
                     android:textSize="20dp"
                     android:textStyle="bold" />
             </LinearLayout>
 
 
             <Button
-                android:id="@+id/proceeding"
+                android:id="@+id/proceed"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/lyout"
-                android:layout_alignParentBottom="true"
-                android:layout_marginBottom="0dp"
-                android:text="Proceed To Payment"
-                android:textColor="@color/colorPrimary"
-                android:textSize="20dp" />
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="150dp"
+                android:text="Proceed To Checkout" />
+
 
 
         </LinearLayout>
+
 
     </ScrollView>
 
