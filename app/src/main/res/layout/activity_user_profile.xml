@@ -173,4 +173,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewAddress"
         app:layout_constraintVertical_bias="0.304" />
+
+    <TextView
+        android:id="@+id/textViewOders"
+        android:layout_width="103dp"
+        android:layout_height="24dp"
+        android:hint="Your Orders"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.065"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.343" />
 </androidx.constraintlayout.widget.ConstraintLayout>
