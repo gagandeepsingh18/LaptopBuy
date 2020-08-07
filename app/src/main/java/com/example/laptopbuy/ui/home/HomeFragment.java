@@ -45,6 +45,7 @@ public class HomeFragment extends Fragment {
         Log.d("Default Fragment :","OnCreateView Called!");
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_home, container, false);
+
     }
 
 
