@@ -14,7 +14,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="76dp"
-        android:text="If you have any query, any complaint regarding product, facing any issue in the app or you have any suggestions regarding our services"
+        android:text="@string/if_you_have_any_query_any_complaint_regarding_product_facing_any_issue_in_the_app_or_you_have_any_suggestions_regarding_our_services"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -26,7 +26,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
-        android:text="Please write it here with your email id or phone and we will get to you soon!!!"
+        android:text="@string/please_write_it_here_with_your_email_id_or_phone_and_we_will_get_to_you_soon"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -39,11 +39,12 @@
         android:layout_height="163dp"
         android:layout_marginTop="40dp"
         android:ems="10"
-        android:hint="Message"
+        android:hint="@string/message"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+        app:layout_constraintTop_toBottomOf="@+id/textView13"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/editTextTextEmailAddress"
@@ -51,12 +52,13 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:ems="10"
-        android:hint="Email"
+        android:hint="@string/email"
         android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.263"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/editTextPhone"
@@ -64,12 +66,13 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:ems="10"
-        android:hint="Phone Number"
+        android:hint="@string/phone_number"
         android:inputType="phone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.263"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress"
+        android:autofillHints="" />
 
     <Button
         android:id="@+id/button2"
@@ -78,7 +81,7 @@
         android:layout_marginTop="36dp"
         android:backgroundTint="#0D1B68"
         android:shadowColor="#162A9E"
-        android:text="Submit"
+        android:text="@string/submit"
         android:textColor="#FFFFFF"
         android:textColorHint="#162A9E"
         app:layout_constraintEnd_toEndOf="parent"

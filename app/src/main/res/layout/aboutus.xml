@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:text="OUR VISION"
+        android:text="@string/our_vision"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.045"
@@ -25,7 +25,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="We believe technology is amazing, and we aspire to enhance our customers’ lives through technology – anywhere, anytime."
+        android:text="@string/we_believe_technology_is_amazing_and_we_aspire_to_enhance_our_customers_lives_through_technology_anywhere_anytime"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.045"
         app:layout_constraintStart_toStartOf="parent"
@@ -36,7 +36,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
-        android:text="OUR COMPANY"
+        android:text="@string/our_company"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.05"
@@ -48,7 +48,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="Wholly-owned subsidiary || Canada’s largest consumer electronics retailer"
+        android:text="@string/wholly_owned_subsidiary_canada_s_largest_consumer_electronics_retailer"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -59,7 +59,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
-        android:text="OUR PRESENCE"
+        android:text="@string/our_presence"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.062"
@@ -71,7 +71,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="175+ stores coast-to-coast || 12,000+ Canadians employed nationwide"
+        android:text="@string/_175_stores_coast_to_coast_12_000_canadians_employed_nationwide"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -82,7 +82,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
-        android:text="OUR SUCCESS"
+        android:text="@string/our_success"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.048"
@@ -105,7 +105,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
-        android:text="JOIN US"
+        android:text="@string/join_us"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.437"
@@ -120,7 +120,8 @@
         android:layout_marginTop="120dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView35"
-        app:srcCompat="@drawable/fb" />
+        app:srcCompat="@drawable/fb"
+        android:contentDescription="@string/todo" />
 
     <ImageView
         android:id="@+id/imageView6"
@@ -130,7 +131,8 @@
         android:layout_marginTop="64dp"
         app:layout_constraintStart_toEndOf="@+id/imageView5"
         app:layout_constraintTop_toBottomOf="@+id/textView35"
-        app:srcCompat="@drawable/insta" />
+        app:srcCompat="@drawable/insta"
+        android:contentDescription="@string/todo" />
 
     <ImageView
         android:id="@+id/imageView7"
@@ -141,7 +143,8 @@
         app:layout_constraintHorizontal_bias="0.366"
         app:layout_constraintStart_toEndOf="@+id/imageView6"
         app:layout_constraintTop_toBottomOf="@+id/textView35"
-        app:srcCompat="@drawable/twitter" />
+        app:srcCompat="@drawable/twitter"
+        android:contentDescription="@string/todo" />
 
     <ImageView
         android:id="@+id/imageView8"
@@ -151,5 +154,6 @@
         android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView35"
-        app:srcCompat="@drawable/pinterest" />
+        app:srcCompat="@drawable/pinterest"
+        android:contentDescription="@string/todo" />
 </androidx.constraintlayout.widget.ConstraintLayout>
