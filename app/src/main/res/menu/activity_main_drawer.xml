@@ -24,5 +24,6 @@
             android:id="nav_faqs"
             android:icon="@drawable/ic_faqs"
             android:title="FAQ'S"/>
+
     </group>
 </menu>
