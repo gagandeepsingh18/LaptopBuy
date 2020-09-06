@@ -16,6 +16,7 @@ public class AboutusActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.aboutus);
         Intent intent=getIntent();
+        startActivity(intent);
 
         mTextView = (TextView) findViewById(R.id.text);
 

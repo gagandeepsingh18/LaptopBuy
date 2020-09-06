@@ -20,6 +20,7 @@ public class AskmeActivity extends AppCompatActivity implements View.OnClickList
         super.onCreate(savedInstanceState);
         setContentView(R.layout.askme);
         Intent intent = getIntent();
+        startActivity(intent);
 
         mTextView = (TextView) findViewById(R.id.text);
 
