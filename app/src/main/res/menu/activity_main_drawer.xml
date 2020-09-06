@@ -16,10 +16,9 @@
             android:id="@+id/nav_slideshow"
             android:icon="@drawable/ic_menu_slideshow"
             android:title="@string/menu_search" />
-        <item
-            android:id="@+id/nav_aboutus"
-            android:icon="@drawable/ic_aboutus"
-            android:title="About Us"/>
+        <item android:title="MORE">
+            <menu>
+
         <item
             android:id="nav_faqs"
             android:icon="@drawable/ic_faqs"
@@ -28,6 +27,11 @@
             android:id="@+id/nav_contactus"
             android:icon="@drawable/ic_contactus"
             android:title="Contact Us"/>
-
+        <item
+            android:id="@+id/nav_aboutus"
+            android:icon="@drawable/ic_aboutus"
+            android:title="About Us"/>
+            </menu>
+        </item>
     </group>
 </menu>
