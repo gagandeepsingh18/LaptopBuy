@@ -133,6 +133,7 @@
         app:layout_constraintStart_toEndOf="@+id/imageView5"
         app:layout_constraintTop_toBottomOf="@+id/textView35"
         app:srcCompat="@drawable/insta"
+        android:onClick="insta"
         android:contentDescription="@string/todo" />
 
     <ImageView
@@ -145,6 +146,7 @@
         app:layout_constraintStart_toEndOf="@+id/imageView6"
         app:layout_constraintTop_toBottomOf="@+id/textView35"
         app:srcCompat="@drawable/twitter"
+        android:onClick="twitter"
         android:contentDescription="@string/todo" />
 
     <ImageView
@@ -156,5 +158,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView35"
         app:srcCompat="@drawable/internet"
+        android:onClick="internet"
         android:contentDescription="@string/todo" />
 </androidx.constraintlayout.widget.ConstraintLayout>
