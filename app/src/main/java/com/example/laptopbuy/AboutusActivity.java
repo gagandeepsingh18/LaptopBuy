@@ -17,7 +17,7 @@ public class AboutusActivity extends AppCompatActivity {
         setContentView(R.layout.aboutus);
         Intent intent=getIntent();
         startActivity(intent);
-
+//Here, About us activity is being started by getIntent() function.
         mTextView = (TextView) findViewById(R.id.text);
 
 

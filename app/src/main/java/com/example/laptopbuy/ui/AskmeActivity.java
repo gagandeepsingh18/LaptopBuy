@@ -21,6 +21,7 @@ public class AskmeActivity extends AppCompatActivity implements View.OnClickList
         setContentView(R.layout.askme);
         Intent intent = getIntent();
         startActivity(intent);
+        // It is to open the page when the button is pressed. To Fetch the data of the page.
 
         mTextView = (TextView) findViewById(R.id.text);
 
@@ -29,6 +30,7 @@ public class AskmeActivity extends AppCompatActivity implements View.OnClickList
     }
             @Override
             public void onClick(View v) {
+        // A view is created which will show a toast after pressing the Submit button.
                 Toast.makeText(this,"Submitted",Toast.LENGTH_SHORT).show();
             }
         }
