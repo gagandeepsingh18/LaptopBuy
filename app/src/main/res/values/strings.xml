@@ -2,14 +2,15 @@
     <string name="app_name">LaptopBuy</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Hi, Gagandeep</string>
+    <string name="nav_header_title">Hi, </string>
     <string name="nav_header_subtitle">Welcome to LaptopBUY</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_logout">Logout</string>
     <string name="app_logo_name">LaptopBUY</string>
     <string name="app_logo_slogan">Buy the best Laptops in North America</string>
+    <string name="skip_login"><u><b>Skip Login</b></u></string>
 
-    <string name="menu_home">Home</string>
+<string name="menu_home">Home</string>
     <string name="menu_favourite">Favourite</string>
     <string name="menu_search">Search</string>
     <string name="AboutUs">About Us</string>
@@ -43,18 +44,11 @@
     <string name="email">Email</string>
     <string name="phone_number">Phone Number</string>
     <string name="submit">Submit</string>
-    <string name="our_vision">OUR VISION</string>
-    <string name="we_believe_technology_is_amazing_and_we_aspire_to_enhance_our_customers_lives_through_technology_anywhere_anytime">We believe technology is amazing, and we aspire to enhance our customers’ lives through technology – anywhere, anytime.</string>
-    <string name="our_company">OUR COMPANY</string>
+
     <string name="wholly_owned_subsidiary_canada_s_largest_consumer_electronics_retailer">Wholly-owned subsidiary || Canada’s largest consumer electronics retailer</string>
-    <string name="our_presence">OUR PRESENCE</string>
+
     <string name="_175_stores_coast_to_coast_12_000_canadians_employed_nationwide">175+ stores coast-to-coast || 12,000+ Canadians employed nationwide</string>
-    <string name="our_success">OUR SUCCESS</string>
-    <string name="join_us">JOIN US</string>
-    <string name="todo">TODO</string>
-    <string name="todo">TODO</string>
-    <string name="todo">TODO</string>
-    <string name="todo">TODO</string>
+
     <string name="fb">https://www.facebook.com/bestbuy/</string>
     <string name="insta">https://www.instagram.com/bestbuycanada/?hl=en</string>
     <string name="twitter">https://twitter.com/bestbuycanada?lang=en</string>
