@@ -28,10 +28,11 @@ public class AskmeActivity extends AppCompatActivity implements View.OnClickList
         Button button2 = findViewById(R.id.button2);
         button2.setOnClickListener(this);
     }
-            @Override
-            public void onClick(View v) {
+
+    @Override
+    public void onClick(View v) {
         // A view is created which will show a toast after pressing the Submit button.
-                Toast.makeText(this,"Submitted",Toast.LENGTH_SHORT).show();
-            }
-        }
+        Toast.makeText(this, "Submitted", Toast.LENGTH_SHORT).show();
+    }
+}
 

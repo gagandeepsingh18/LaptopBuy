@@ -8,13 +8,11 @@ import android.view.View;
 import android.widget.TextView;
 
 
-
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.laptopbuy.ui.AskmeActivity;
 
 public class FaqActivity extends AppCompatActivity {
-
 
 
     private TextView mTextView;
@@ -25,12 +23,15 @@ public class FaqActivity extends AppCompatActivity {
         setContentView(R.layout.faq);
 
     }
-    public void AskMe(View view){
-        Intent AskMeIntent= new Intent(this, AskmeActivity.class);
+
+    public void AskMe(View view) {
+        Intent AskMeIntent = new Intent(this, AskmeActivity.class);
         startActivity(AskMeIntent);
         //Here, the Ask Me Activity is being started upon pressing the Ask Me button.
-    }public void AboutUs(View view){
-        Intent AboutUsIntent=new Intent(this,AboutusActivity.class);
+    }
+
+    public void AboutUs(View view) {
+        Intent AboutUsIntent = new Intent(this, AboutusActivity.class);
         startActivity(AboutUsIntent);
         // Here, the About Us activity is being started upon pressing the About Us button.
     }
