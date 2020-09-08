@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "564916174900",
+    "firebase_url": "https://laptopbuy-c027c.firebaseio.com",
+    "project_id": "laptopbuy-c027c",
+    "storage_bucket": "laptopbuy-c027c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:564916174900:android:5c1363646f2d49cb298a61",
+        "android_client_info": {
+          "package_name": "com.example.laptopbuy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "564916174900-2jdl93oj4rdch7779t3mfhvo4p7dpg90.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqCqpsD39Usa0zb3sfRTwuPEXV5Lks3dU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "564916174900-2jdl93oj4rdch7779t3mfhvo4p7dpg90.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
