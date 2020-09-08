@@ -55,6 +55,10 @@
     <string name="todo">TODO</string>
     <string name="todo">TODO</string>
     <string name="todo">TODO</string>
+    <string name="fb">https://www.facebook.com/bestbuy/</string>
+    <string name="insta">https://www.instagram.com/bestbuycanada/?hl=en</string>
+    <string name="twitter">https://twitter.com/bestbuycanada?lang=en</string>
+    <string name="internet">https://www.bestbuy.ca/en-ca</string>
 
 
 </resources>
