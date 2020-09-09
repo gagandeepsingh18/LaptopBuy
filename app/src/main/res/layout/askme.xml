@@ -82,6 +82,7 @@
         android:backgroundTint="#0D1B68"
         android:shadowColor="#162A9E"
         android:text="@string/submit"
+        android:onClick="saveNote"
         android:textColor="#FFFFFF"
         android:textColorHint="#162A9E"
         app:layout_constraintEnd_toEndOf="parent"
