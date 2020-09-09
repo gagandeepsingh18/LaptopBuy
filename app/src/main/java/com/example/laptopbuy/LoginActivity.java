@@ -31,6 +31,10 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         firebaseAuth = FirebaseAuth.getInstance();
+        /**
+         *  Firebase Authentication Object is declared to access Firebase Authentication service
+         */
+
         Login = findViewById(R.id.LoginButton);
         Register = findViewById(R.id.RegistrationPageButton);
         SkipLogin = findViewById(R.id.SkipLogin);
