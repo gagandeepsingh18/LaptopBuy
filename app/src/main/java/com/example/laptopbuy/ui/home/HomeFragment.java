@@ -25,14 +25,13 @@ import retrofit2.Response;
 public class HomeFragment extends Fragment {
 
     public HomeFragment() {
-        // Required empty public constructor
+
     }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        Log.d("Default Fragment :","OnCreate Called!");
 
 
 
@@ -42,8 +41,6 @@ public class HomeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        Log.d("Default Fragment :","OnCreateView Called!");
-        // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_home, container, false);
 
     }

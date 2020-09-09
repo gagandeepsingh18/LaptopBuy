@@ -1,4 +1,4 @@
-package com.example.laptopbuy.ui;
+package com.example.laptopbuy;
 
 import android.content.Intent;
 import android.os.Bundle;

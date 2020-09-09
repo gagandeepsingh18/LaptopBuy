@@ -10,8 +10,6 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.laptopbuy.ui.AskmeActivity;
-
 public class FaqActivity extends AppCompatActivity {
 
 
