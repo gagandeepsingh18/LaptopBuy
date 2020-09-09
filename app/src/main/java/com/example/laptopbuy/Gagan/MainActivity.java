@@ -1,4 +1,4 @@
-package com.example.laptopbuy;
+package com.example.laptopbuy.Gagan;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -8,9 +8,13 @@ import android.view.View;
 import android.view.Menu;
 import android.widget.Button;
 
+import com.example.laptopbuy.R;
+import com.example.laptopbuy.UserProfile;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.FirebaseFirestore;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
@@ -36,11 +40,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Toolbar toolbar = findViewById(R.id.toolbar);
+       Toolbar toolbar = findViewById(R.id.maintoolbar);
         setSupportActionBar(toolbar);
 
 
-        FloatingActionButton fab = findViewById(R.id.fab);
+       /** FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -48,7 +52,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 Intent intent = new Intent(MainActivity.this, CartForm_Activity.class);
                 startActivity(intent);
             }
-        });
+        }); */
         drawerLayout= findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.bringToFront();
