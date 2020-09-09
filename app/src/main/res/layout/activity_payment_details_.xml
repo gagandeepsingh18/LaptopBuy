@@ -80,6 +80,7 @@
                     android:text=""
                     android:hint="Enter Card Holder Name"
                     android:textSize="20dp"
+                    android:background="@drawable/borderstyle"
                     android:textStyle="bold" />
             </LinearLayout>
 
@@ -103,6 +104,7 @@
                     android:text=""
                     android:hint="Enter Number"
                     android:textSize="20dp"
+                    android:background="@drawable/borderstyle"
                     android:textStyle="bold" />
             </LinearLayout>
 
@@ -127,6 +129,7 @@
                     android:text=""
                     android:hint="Enter month/year"
                     android:textSize="20dp"
+                    android:background="@drawable/borderstyle"
                     android:textStyle="bold" />
             </LinearLayout>
 
@@ -150,6 +153,7 @@
                     android:text=""
                     android:hint=" Enter Code"
                     android:textSize="20dp"
+                    android:background="@drawable/borderstyle"
                     android:textStyle="bold" />
             </LinearLayout>
 
@@ -161,6 +165,7 @@
                 android:layout_alignParentBottom="true"
                 android:layout_marginBottom="0dp"
                 android:text="Payment Confirm"
+                android:background="@drawable/borderstyle"
                 android:textColor="@color/colorPrimary"
                 android:textSize="20dp" />
         </LinearLayout>
