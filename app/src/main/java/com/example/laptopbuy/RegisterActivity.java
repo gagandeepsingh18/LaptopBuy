@@ -30,14 +30,15 @@ public class RegisterActivity extends AppCompatActivity {
     String fname,lname,email,upassword, cpassword;
     Button Loginbtn,Registerbtn;
 
+    /**
+     * Create instances of Firebase Database & Authentication to access Firebase services
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
-        /**
-         * Create instances of Firebase Database & Authentication to access Firebase services
-         */
+
         firebaseDatabase = FirebaseDatabase.getInstance();
         firebaseAuth = FirebaseAuth.getInstance();
 
