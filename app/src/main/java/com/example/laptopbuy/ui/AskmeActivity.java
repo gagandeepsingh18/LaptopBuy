@@ -10,10 +10,19 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.laptopbuy.R;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class AskmeActivity extends AppCompatActivity implements View.OnClickListener {
+    private static final String TAG = "AskMeActivity";
+    private static final String KEY_TITLE = "Ask me";
+    private static final String KEY_DESCRIPTION = "Complaint";
+
 
     private TextView mTextView;
+    private TextView editTextMessage;
+    private TextView editTextEmailAddress;
+    private TextView editTextPhone;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +34,7 @@ public class AskmeActivity extends AppCompatActivity implements View.OnClickList
 
         mTextView = (TextView) findViewById(R.id.text);
 
-        Button button2 = findViewById(R.id.button2);
+        Button button2 = findViewById(R.id.submit);
         button2.setOnClickListener(this);
     }
 
