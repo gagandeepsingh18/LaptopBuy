@@ -18,13 +18,14 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.HashMap;
 
 public class RegisterActivity extends AppCompatActivity {
 
     FirebaseAuth firebaseAuth;
-    FirebaseDatabase firebaseDatabase;
+    FirebaseFirestore firebaseFirestore;
 
     EditText FName, LName, EMail, UPassword, CPassword;
     String fname,lname,email,upassword, cpassword;
@@ -39,7 +40,7 @@ public class RegisterActivity extends AppCompatActivity {
         setContentView(R.layout.activity_register);
 
 
-        firebaseDatabase = FirebaseDatabase.getInstance();
+        firebaseFirestore = FirebaseFirestore.getInstance();
         firebaseAuth = FirebaseAuth.getInstance();
 
         Registerbtn = findViewById(R.id.RegisterButton);
@@ -119,16 +120,22 @@ public class RegisterActivity extends AppCompatActivity {
                         hashMap.put("lastName", lname);
                         hashMap.put("uId", userId);
 
-                        FirebaseDatabase database = FirebaseDatabase.getInstance();
-                        DatabaseReference Reference = database.getReference("UsersProfile");
-
-                        Reference.child(userId).setValue(hashMap).addOnSuccessListener(new OnSuccessListener<Void>() {
+                        firebaseFirestore.collection("UsersProfile").document(user.getUid()).set(hashMap).addOnSuccessListener(new OnSuccessListener<Void>() {
                             @Override
                             public void onSuccess(Void aVoid) {
                                 startActivity(new Intent(RegisterActivity.this, LoginActivity.class));
                                 FirebaseAuth.getInstance().signOut();
                             }
                         });
+                       // FirebaseDatabase database = FirebaseDatabase.getInstance();
+                     //   DatabaseReference Reference = database.getReference("");
+
+                      //  Reference.child(userId).setValue(hashMap).addOnSuccessListener(new OnSuccessListener<Void>() {
+                      //      @Override
+                        //    public void onSuccess(Void aVoid) {
+                      //
+                     //       }
+                    //    });
                     } else {
 
                         Toast.makeText(RegisterActivity.this, "Something is wrong. Please try again", Toast.LENGTH_LONG).show();
