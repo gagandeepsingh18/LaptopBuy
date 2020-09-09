@@ -3,35 +3,27 @@ package com.example.laptopbuy.Gagan;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.view.View;
-import android.view.Menu;
-import android.widget.Button;
 
+import com.example.laptopbuy.Gagan.ui.home.HomeFragment;
 import com.example.laptopbuy.R;
 import com.example.laptopbuy.UserProfile;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.firestore.FirebaseFirestore;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.core.view.GravityCompat;
-import androidx.fragment.app.Fragment;
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
-import androidx.navigation.ui.AppBarConfiguration;
-import androidx.navigation.ui.NavigationUI;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     DrawerLayout drawerLayout;
 
-
+FragmentManager manager;
+FragmentTransaction transaction;
 
 
     @Override
@@ -39,7 +31,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-       Toolbar toolbar = findViewById(R.id.maintoolbar);
+       Toolbar toolbar = findViewById(R.id.mainToolbar);
         setSupportActionBar(toolbar);
 
 
@@ -57,12 +49,16 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         navigationView.bringToFront();
         navigationView.setNavigationItemSelectedListener(this);
 
+
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar,
                 R.string.navigation_drawer_open,R.string.navigation_drawer_close);
 
-
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
+        manager = getSupportFragmentManager();
+        transaction = manager.beginTransaction();
+        transaction.add(R.id.Fragment_container,new HomeFragment());
+        transaction.commit();
 
     }
 

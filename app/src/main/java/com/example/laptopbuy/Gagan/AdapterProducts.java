@@ -65,7 +65,7 @@ public class AdapterProducts extends RecyclerView.Adapter<AdapterProducts.Produc
     }
 
 
-    class ProductHolder extends RecyclerView.ViewHolder{
+    public class ProductHolder extends RecyclerView.ViewHolder{
         ImageView productImageView;
         TextView productNameView;
         TextView productDescriptionView;
@@ -77,13 +77,13 @@ public class AdapterProducts extends RecyclerView.Adapter<AdapterProducts.Produc
             productDescriptionView = itemView.findViewById(R.id.ProductDescription);
             productPriceView = itemView.findViewById(R.id.ProductPrice);
 
-            itemView.setTag(this);
+            //itemView.setTag(this);
 
-            itemView.setOnClickListener(Listener);
+          //  itemView.setOnClickListener(Listener);
         }
     }
 
-    public void setOnClickListener(View.OnClickListener onClickListener){
-        Listener = onClickListener;
-    }
+  //  public void setOnClickListener(View.OnClickListener onClickListener){
+//        Listener = onClickListener;
+  //  }
 }

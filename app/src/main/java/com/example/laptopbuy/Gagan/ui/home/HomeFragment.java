@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
 import androidx.navigation.fragment.NavHostFragment;
@@ -29,7 +30,7 @@ import java.util.List;
 
 public class HomeFragment extends Fragment {
 
-    List<ModelProducts> modelProducts;
+    List<ModelProducts> modelProducts= new ArrayList<>();
     NavController navController;
 
     FirebaseAuth firebaseAuth;
@@ -50,8 +51,8 @@ public class HomeFragment extends Fragment {
         firebaseAuth = FirebaseAuth.getInstance();
         firebaseFirestore = FirebaseFirestore.getInstance();
 
-        NavHostFragment navHostFragment= (NavHostFragment) getActivity().getSupportFragmentManager().findFragmentById(R.id.Fragment_container);
-        navController = navHostFragment.getNavController();
+        ///NavHostFragment navHostFragment= (NavHostFragment) getActivity().getSupportFragmentManager().findFragmentById(R.id.Fragment_container);
+        //navController = navHostFragment.getNavController();
 
 
     }
@@ -61,22 +62,27 @@ public class HomeFragment extends Fragment {
                              Bundle savedInstanceState) {
 
         View view= inflater.inflate(R.layout.fragment_home, container, false);
-        recyclerView = view.findViewById(R.id.ProductRecycler);
 
-        ProductDataLoadingFunction();
         return view;
     }
 
-    private void ProductDataLoadingFunction() {
-        Toast.makeText(getContext(),"You have entered incorrect user credentials", Toast.LENGTH_SHORT).show();
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        recyclerView = view.findViewById(R.id.ProductRecycler);
+
+        ProductDataLoadingFunction();
+    }
+
+    public void ProductDataLoadingFunction() {
+
         firebaseFirestore.collection("Products").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
             @Override
             public void onComplete(@NonNull Task<QuerySnapshot> task) {
                 if (task.isSuccessful()){
                     for (QueryDocumentSnapshot documentSnapshot : task.getResult()){
-                        Toast.makeText(getContext(),"You have entered incorrect user credentials", Toast.LENGTH_SHORT).show();
-                            String productName = (String) documentSnapshot.getData().get("productName");
-                       String productDescription= (String) documentSnapshot.getData().get("productDescription");
+                        String productName = (String) documentSnapshot.getData().get("productName");
+                        String productDescription= (String) documentSnapshot.getData().get("productDescription");
                         String productPrice= (String) documentSnapshot.getData().get("productPrice");
                         String productImage= (String) documentSnapshot.getData().get("productImage");
 
@@ -89,6 +95,7 @@ public class HomeFragment extends Fragment {
 
                     }
                 }
+
             }
         });
     }
