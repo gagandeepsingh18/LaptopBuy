@@ -55,7 +55,7 @@ public class AdressDelievery_Activity extends AppCompatActivity {
         map.put("city",City);
         map.put("provice",Province);
 
-                db.collection("Carts")
+                db.collection("Cart")
                         .document("Cart").set(map).addOnSuccessListener(new OnSuccessListener<Void>() {
                             @Override
                             public void onSuccess(Void aVoid) {
