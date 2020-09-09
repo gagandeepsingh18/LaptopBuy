@@ -51,11 +51,7 @@ public class RegisterActivity extends AppCompatActivity {
         CPassword = findViewById(R.id.ConfirmPasswordInput);
 
 
-        fname = FName.getText().toString();
-        lname = LName.getText().toString();
-        email = EMail.getText().toString();
-        upassword = UPassword.getText().toString();
-        cpassword = CPassword.getText().toString();
+
 
 
         Loginbtn.setOnClickListener(new View.OnClickListener() {
@@ -68,6 +64,13 @@ public class RegisterActivity extends AppCompatActivity {
         Registerbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                fname = FName.getText().toString();
+                lname = LName.getText().toString();
+                email = EMail.getText().toString();
+                upassword = UPassword.getText().toString();
+                cpassword = CPassword.getText().toString();
+
                 if (fname.isEmpty())
                 {
                     Toast.makeText(RegisterActivity.this,"First Name field is empty", Toast.LENGTH_SHORT).show();
@@ -106,16 +109,16 @@ public class RegisterActivity extends AppCompatActivity {
                     if (task.isSuccessful()) {
 
                         FirebaseUser user = firebaseAuth.getCurrentUser();
-                        String userEmail= user.getEmail();
-                        String userId= user.getUid();
+                        String userEmail = user.getEmail();
+                        String userId = user.getUid();
 
-                        HashMap<Object, String> hashMap= new HashMap<>();
+                        HashMap<Object, String> hashMap = new HashMap<>();
                         hashMap.put("email", userEmail);
                         hashMap.put("firstName", fname);
                         hashMap.put("lastName", lname);
                         hashMap.put("uId", userId);
 
-                        FirebaseDatabase database= FirebaseDatabase.getInstance();
+                        FirebaseDatabase database = FirebaseDatabase.getInstance();
                         DatabaseReference Reference = database.getReference("UsersProfile");
 
                         Reference.child(userId).setValue(hashMap).addOnSuccessListener(new OnSuccessListener<Void>() {
@@ -125,18 +128,14 @@ public class RegisterActivity extends AppCompatActivity {
                                 FirebaseAuth.getInstance().signOut();
                             }
                         });
-                    }
-                    else {
+                    } else {
 
                         Toast.makeText(RegisterActivity.this, "Something is wrong. Please try again", Toast.LENGTH_LONG).show();
                         FirebaseAuth.getInstance().signOut();
                     }
                 }
             });
-                            /*    }
-                            }
-                        });
-*/
+
         } else {
             Toast.makeText(RegisterActivity.this, "Value of Password and Confirm Password does not match", Toast.LENGTH_LONG).show();
 

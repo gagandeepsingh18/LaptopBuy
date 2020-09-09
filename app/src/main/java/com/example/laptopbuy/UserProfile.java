@@ -8,11 +8,14 @@ import android.view.View;
 import android.widget.Button;
 
 public class UserProfile extends AppCompatActivity {
-Button button=findViewById(R.id.buttonEditProfile);
+
+        Button button;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_profile);
+
+        button=findViewById(R.id.buttonEditProfile);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override

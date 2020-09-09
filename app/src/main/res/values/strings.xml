@@ -10,9 +10,12 @@
     <string name="app_logo_slogan">Buy the best Laptops in North America</string>
     <string name="skip_login"><u><b>Skip Login</b></u></string>
 
-<string name="menu_home">Home</string>
+    <string name="menu_home">Home</string>
     <string name="menu_favourite">Favourite</string>
     <string name="menu_search">Search</string>
+    <string name="menu_profile">Profile</string>
+
+
     <string name="AboutUs">About Us</string>
     <string name="we_believe_technology_is_amazing_and_we_aspire_to_enhance_our_customers_lives_through_technology_anywhere_anytime">We believe technology is amazing, and we aspire to enhance our customers’ lives through technology – anywhere, anytime.</string>
     <string name="our_vision">OUR VISION</string>
