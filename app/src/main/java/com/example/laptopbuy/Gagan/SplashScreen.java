@@ -1,10 +1,12 @@
-package com.example.laptopbuy;
+package com.example.laptopbuy.Gagan;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.laptopbuy.R;
 
 public class SplashScreen extends AppCompatActivity {
     private final int SplashScreenTime = 3000;
