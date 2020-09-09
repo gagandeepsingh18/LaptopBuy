@@ -30,10 +30,10 @@ public class AdressDelievery_Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_adressdelievery);
         db = FirebaseFirestore.getInstance();
-        editTextAddress = findViewById(R.id.edittext_Address);
-        editTextZipCode = findViewById(R.id.edittext_ZipCode);
-        editTextCity = findViewById(R.id.edittext_City);
-        editTextProvince = findViewById(R.id.edittextProvince);
+        editTextAddress = findViewById(R.id.buildingadress);
+        editTextZipCode = findViewById(R.id.zipcode);
+        editTextCity = findViewById(R.id.city);
+        editTextProvince = findViewById(R.id.provine);
 
 
         }

@@ -142,6 +142,7 @@
                     android:layout_height="wrap_content"
                     android:hint="Province"
                     android:text=""
+                    android:id="@+id/provine"
                     android:textSize="20dp"
                     android:background="@drawable/borderstyle"
                     android:textStyle="bold" />
