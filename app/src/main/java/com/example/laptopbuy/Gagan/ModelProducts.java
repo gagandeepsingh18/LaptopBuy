@@ -6,7 +6,7 @@ import android.os.Parcelable;
 public class ModelProducts implements Parcelable {
     String productName, productDescription, productPrice, productManufacturer, productMemory, productStorage, productImage, productCPU, productGPU;
 
-    public ModelProducts() {
+    public ModelProducts(String productName, String productDescription, String productPrice, String productImage) {
     }
 
     protected ModelProducts(Parcel in) {

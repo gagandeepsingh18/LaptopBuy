@@ -1,4 +1,4 @@
-package com.example.laptopbuy.ui.home;
+package com.example.laptopbuy.Gagan.ui.home;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;

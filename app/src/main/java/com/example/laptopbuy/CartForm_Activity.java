@@ -7,7 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class CartForm_Activity extends AppCompatActivity {
+public class
+CartForm_Activity extends AppCompatActivity {
     Button profile, faq;
 
     @Override

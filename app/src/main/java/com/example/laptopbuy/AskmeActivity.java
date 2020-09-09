@@ -11,6 +11,7 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.drawerlayout.widget.DrawerLayout;
 
 import com.example.laptopbuy.R;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -29,17 +30,22 @@ public class AskmeActivity extends AppCompatActivity {
     private static final String KEY_EMAIL = "Email";
     private static final String KEY_PHONE = "Phone";
 
-
+    //Initializing all the fields.
     private TextView editTextMessage;
     private TextView editTextEmailAddress;
     private TextView editTextPhone;
     private FirebaseFirestore db = FirebaseFirestore.getInstance();
+    DrawerLayout drawerLayout;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.askme);
+
+        //Assign variable
+        drawerLayout = findViewById(R.id.drawer_layout);
+
         Intent intent = getIntent();
         startActivity(intent);
         // It is to open the page when the button is pressed. To Fetch the data of the page.
@@ -79,4 +85,6 @@ public class AskmeActivity extends AppCompatActivity {
 
     }
 }
+
+
 

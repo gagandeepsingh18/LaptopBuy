@@ -58,14 +58,14 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Apartment Building Adress"
+                    android:text="Apartment Building Address"
                     android:textStyle="bold" />
 
                 <EditText
                     android:id="@+id/buildingadress"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Enter Address here"
+                    android:hint="Address"
                     android:text=""
                     android:textSize="20dp"
                     android:background="@drawable/borderstyle"
@@ -90,7 +90,7 @@
                     android:id="@+id/zipcode"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Enter Zip code here"
+                    android:hint="ZipCode"
                     android:text=""
                     android:textSize="20dp"
                     android:background="@drawable/borderstyle"
@@ -114,7 +114,7 @@
                     android:id="@+id/city"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Enter City here"
+                    android:hint="City"
                     android:text=""
                     android:background="@drawable/borderstyle"
                     android:textSize="20dp"
@@ -140,7 +140,7 @@
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Enter State/Province here"
+                    android:hint="Province"
                     android:text=""
                     android:textSize="20dp"
                     android:background="@drawable/borderstyle"
@@ -155,6 +155,7 @@
                 android:layout_alignParentBottom="true"
                 android:layout_marginBottom="0dp"
                 android:text="Proceed To Payment"
+                android:onClick="saveAddress"
                 android:textColor="@color/colorPrimary"
                 android:background="@drawable/borderstyle"
                 android:textSize="20dp" />
