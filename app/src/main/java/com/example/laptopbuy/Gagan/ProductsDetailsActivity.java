@@ -2,6 +2,7 @@ package com.example.laptopbuy.Gagan;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.ComponentName;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -20,6 +21,8 @@ ImageView imageView;
 TextView price,name,desc, manufacturer, memory, storage, cPU, gPU;
 String productPrice, productDescription, productName, productImage, productManufacturer,
         productMemory, productStorage,productCPU, productGPU;
+
+ModelProducts modelProducts;
 
 Button cart;
 
@@ -44,7 +47,10 @@ Button cart;
         gPU= findViewById(R.id.ProductDetailsGPU);
         cart= findViewById(R.id.CartButton);
 
-        final Bundle bundle = getIntent().getExtras();
+
+
+
+       final Bundle bundle = getIntent().getExtras();
         productPrice = bundle.getString("productPrice");
         productDescription = bundle.getString("productDescription");
         productName = bundle.getString("productName");
@@ -68,7 +74,6 @@ Button cart;
         cart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 SendDataToCart();
             }
         });

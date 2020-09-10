@@ -25,12 +25,12 @@ public class FaqActivity extends AppCompatActivity {
     public void AskMe(View view) {
         Intent AskMeIntent = new Intent(this, AskmeActivity.class);
         startActivity(AskMeIntent);
-        //Here, the Ask Me Activity is being started upon pressing the Ask Me button.
+        //**Here, the Ask Me Activity is being started upon pressing the Ask Me button.*/
     }
 
     public void AboutUs(View view) {
         Intent AboutUsIntent = new Intent(this, AboutusActivity.class);
         startActivity(AboutUsIntent);
-        // Here, the About Us activity is being started upon pressing the About Us button.
+        //** Here, the About Us activity is being started upon pressing the About Us button.*/
     }
 }

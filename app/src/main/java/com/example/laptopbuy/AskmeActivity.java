@@ -30,7 +30,7 @@ public class AskmeActivity extends AppCompatActivity {
     private static final String KEY_EMAIL = "Email";
     private static final String KEY_PHONE = "Phone";
 
-    //Initializing all the fields.
+    //**Initializing all the fields.*/
     private TextView editTextMessage;
     private TextView editTextEmailAddress;
     private TextView editTextPhone;
@@ -43,12 +43,12 @@ public class AskmeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.askme);
 
-        //Assign variable
+        //**Assign variable*/
         drawerLayout = findViewById(R.id.drawer_layout);
 
         Intent intent = getIntent();
         startActivity(intent);
-        // It is to open the page when the button is pressed. To Fetch the data of the page.
+        // **It is to open the page when the button is pressed. To Fetch the data of the page.*/
 
 
         editTextMessage = findViewById(R.id.editTextMessage);
@@ -57,7 +57,7 @@ public class AskmeActivity extends AppCompatActivity {
     }
 
     public void saveNote(View v) {
-        // View on submitting the message or complaint.
+        //**View on submitting the message or complaint.*/
         String message = editTextMessage.getText().toString();
         String email = editTextEmailAddress.getText().toString();
         String phone = editTextPhone.getText().toString();
@@ -68,14 +68,14 @@ public class AskmeActivity extends AppCompatActivity {
         note.put(KEY_PHONE, phone);
         db.collection("Feedback").document("Complaint").set(note)
                 .addOnSuccessListener(new OnSuccessListener<Void>() {
-                    //Successfully sending the message/complaint/feedback.
+                    //**Successfully sending the message/complaint/feedback.*/
                     @Override
                     public void onSuccess(Void aVoid) {
                         Toast.makeText(AskmeActivity.this, "Submitted", Toast.LENGTH_SHORT).show();
                     }
                 })
                 .addOnFailureListener(new OnFailureListener() {
-                    //If message/complaint/feedback sending failed.
+                    //**If message/complaint/feedback sending failed.*/
                     @Override
                     public void onFailure(@NonNull Exception e) {
                         Toast.makeText(AskmeActivity.this, "Error! Please Try Again.", Toast.LENGTH_SHORT).show();

@@ -1,6 +1,9 @@
 package com.example.laptopbuy.Gagan;
 
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
+import android.os.Parcelable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -38,6 +41,8 @@ public class HomeFragment extends Fragment {
 
     RecyclerView recyclerView;
     AdapterProducts adapterProducts;
+
+
 
     public HomeFragment() {
 
@@ -98,6 +103,7 @@ public class HomeFragment extends Fragment {
                         recyclerView.setLayoutManager(layoutManager);
                         adapterProducts = new AdapterProducts(modelProducts, getActivity());
                         recyclerView.setAdapter(adapterProducts);
+
 
                     }
                 }

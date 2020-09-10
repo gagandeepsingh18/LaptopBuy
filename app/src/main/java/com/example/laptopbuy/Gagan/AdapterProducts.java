@@ -24,6 +24,7 @@ public class AdapterProducts extends RecyclerView.Adapter<AdapterProducts.Produc
 
 
     List<ModelProducts> modelProducts;
+    View.OnClickListener Listener;
     Context context;
 
 
@@ -62,7 +63,7 @@ public class AdapterProducts extends RecyclerView.Adapter<AdapterProducts.Produc
         holder.productDescriptionView.setText(productDescription);
         holder.productPriceView.setText("Price: $"+productPrice);
 
-        holder.itemView.setOnClickListener(new View.OnClickListener() {
+       holder.itemView.setOnClickListener(new View.OnClickListener() {
             String productName, productDescription, productPrice, productManufacturer, productMemory, productStorage, productImage, productCPU, productGPU;
 
             @Override
@@ -94,9 +95,9 @@ public class AdapterProducts extends RecyclerView.Adapter<AdapterProducts.Produc
                 intent.putExtras(bundle);
                 context.startActivity(intent);
 
-
             }
         });
+
     }
 
     @Override
@@ -116,6 +117,7 @@ public class AdapterProducts extends RecyclerView.Adapter<AdapterProducts.Produc
             productNameView = itemView.findViewById(R.id.ProductTitle);
             productDescriptionView = itemView.findViewById(R.id.ProductDescription);
             productPriceView = itemView.findViewById(R.id.ProductPrice);
+
 
 
         }
