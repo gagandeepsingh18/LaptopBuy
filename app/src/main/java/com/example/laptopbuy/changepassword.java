@@ -3,10 +3,12 @@ package com.example.laptopbuy;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
+import com.example.laptopbuy.Gagan.MainActivity;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
@@ -41,5 +43,6 @@ firebaseUser.updatePassword(password).addOnSuccessListener(new OnSuccessListener
 
     }
 });
+startActivity(new Intent(changepassword.this, MainActivity.class));
     }
 }
