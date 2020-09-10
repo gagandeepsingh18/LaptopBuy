@@ -52,6 +52,7 @@ Button cart;
         cart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 SendDataToCart();
             }
         });
@@ -60,13 +61,6 @@ Button cart;
     }
 
     private void SendDataToCart() {
-      /*  Bundle cartbundle= new Bundle();
-        cartbundle.putString("productName", productName);
-        cartbundle.putString("productDescription", productDescription);
-        cartbundle.putString("productPrice", productPrice);
-        cartbundle.putString("productImage", productImage);
-*/
-
         Intent intent = new Intent(this, CartForm_Activity.class);
         intent.putExtra("name",productName);
         intent.putExtra("productDescription",productDescription);

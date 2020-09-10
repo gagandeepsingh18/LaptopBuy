@@ -74,7 +74,7 @@
                     android:text="Card Holder" />
 
                 <EditText
-                    android:id="@+id/name"
+                    android:id="@+id/cardname"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text=""
@@ -98,7 +98,7 @@
                     android:text="Card Number" />
 
                 <EditText
-                    android:id="@+id/zipcode"
+                    android:id="@+id/cardnumber"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text=""
@@ -165,6 +165,7 @@
                 android:layout_alignParentBottom="true"
                 android:layout_marginBottom="0dp"
                 android:text="Payment Confirm"
+                android:onClick="done"
                 android:background="@drawable/borderstyle"
                 android:textColor="@color/colorPrimary"
                 android:textSize="20dp" />
