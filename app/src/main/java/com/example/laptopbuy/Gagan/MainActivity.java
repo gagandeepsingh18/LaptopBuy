@@ -27,8 +27,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     DrawerLayout drawerLayout;
 
-FragmentManager manager;
-FragmentTransaction transaction;
+    FragmentManager manager;
+    FragmentTransaction transaction;
 
 
     @Override
@@ -66,28 +66,9 @@ FragmentTransaction transaction;
         transaction.commit();
 
     }
-    public void clickFAQ(View view){
-        //Redirect activity to FAQ page.
-        redirectActivity(this, FaqActivity.class);
-        
-    }
-    public void clickAboutUs(View view){
-        //Redirect activity to About Us page.
-        redirectActivity(this, AboutusActivity.class);
-    }
-    public void clickAskMe(View view){
-        //Redirect activity to Contact us page.
-        redirectActivity(this, AskmeActivity.class);
-    }
 
-    public static void redirectActivity(Activity activity,Class aClass) {
-        //Initialize intent
-        Intent intent = new Intent(activity,aClass);
-        //Set Flag
-        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        //Start Activity
-        activity.startActivity(intent);
-    }
+
+
 
 
     @Override

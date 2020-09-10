@@ -29,17 +29,17 @@
             android:id="@+id/nav_faqs"
             android:icon="@drawable/ic_faqs"
             android:title="FAQ'S"
-            android:onClick="clickFAQ"/>
+            />
         <item
             android:id="@+id/nav_contactus"
             android:icon="@drawable/ic_contactus"
             android:title="Contact Us"
-            android:onClick="clickAskMe"/>
+            />
         <item
             android:id="@+id/nav_aboutus"
             android:icon="@drawable/ic_aboutus"
             android:title="About Us"
-            android:onClick="clickAboutUs"/>
+            />
             </menu>
         </item>
     </group>
