@@ -4,7 +4,11 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 
+import com.example.laptopbuy.AboutusActivity;
+import com.example.laptopbuy.AskmeActivity;
+import com.example.laptopbuy.FaqActivity;
 import com.example.laptopbuy.Gagan.ui.home.HomeFragment;
 import com.example.laptopbuy.R;
 import com.example.laptopbuy.UserProfile;
@@ -64,16 +68,16 @@ FragmentTransaction transaction;
     }
     public void clickFAQ(View view){
         //Redirect activity to FAQ page.
-        redirectActivity(this,FaqActivity.class);
+        redirectActivity(this, FaqActivity.class);
         
     }
     public void clickAboutUs(View view){
         //Redirect activity to About Us page.
-        redirectActivity(this,AboutusActivity.class);
+        redirectActivity(this, AboutusActivity.class);
     }
     public void clickAskMe(View view){
         //Redirect activity to Contact us page.
-        redirectActivity(this,AskmeActivity.class);
+        redirectActivity(this, AskmeActivity.class);
     }
 
     public static void redirectActivity(Activity activity,Class aClass) {

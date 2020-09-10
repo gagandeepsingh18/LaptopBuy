@@ -11,6 +11,7 @@ import android.widget.EditText;
 
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.HashMap;
@@ -24,11 +25,36 @@ public class UserProfile extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_profile);
+
+
+
         name=(EditText) findViewById(R.id.editName);
         email=(EditText) findViewById(R.id.editEmail);
         phone=(EditText) findViewById(R.id.editPhoneNumber);
         address=(EditText) findViewById(R.id.editAddress);
         button=(Button) findViewById(R.id.buttonSave);
+
+
+
+        cl.collection("Profile").document("First Profile").get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+            @Override
+            public void onSuccess(DocumentSnapshot documentSnapshot) {
+                String userName=documentSnapshot.getString("name");
+                String userEmail=documentSnapshot.getString("email");
+                String userPhone=documentSnapshot.getString("Phone");
+                String userAddress=documentSnapshot.getString("address");
+                name.setText(userName);
+                email.setText(userEmail);
+                phone.setText(userPhone);
+                address.setText(userAddress);
+            }
+        }).addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception e) {
+
+            }
+        });
+
 
 
     }
