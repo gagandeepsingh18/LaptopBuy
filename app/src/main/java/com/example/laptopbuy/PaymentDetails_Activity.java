@@ -32,9 +32,9 @@ EditText cardnumber,cardname;
     }
 
     public void done(View view) {
-        pojoCart product=new pojoCart(adress,zipcode,city, province,name,price, cardname.getText().toString(),cardnumber.getText().toString());
-        db.collection("Cart")
-                .document(name).set(product);
+      //  pojoCart product=new pojoCart(adress,zipcode,city, province,name,price, cardname.getText().toString(),cardnumber.getText().toString());
+       // db.collection("Cart")
+        //        .document(name).set(product);
         Intent intent=new Intent(PaymentDetails_Activity.this, MainActivity.class);
         startActivity(intent);
         Toast.makeText(getApplicationContext()," Succesfull",Toast.LENGTH_LONG).show();

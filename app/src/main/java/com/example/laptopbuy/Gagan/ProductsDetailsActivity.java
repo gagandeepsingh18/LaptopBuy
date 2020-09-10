@@ -45,7 +45,7 @@ Button cart;
         productImage = bundle.getString("productImage");
 
         name.setText(productName);
-        price.setText(productPrice);
+        price.setText("$"+productPrice);
         desc.setText(productDescription);
         Picasso.get().load(productImage).into(imageView);
 
