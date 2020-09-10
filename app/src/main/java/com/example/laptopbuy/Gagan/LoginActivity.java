@@ -12,6 +12,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.laptopbuy.R;
+import com.example.laptopbuy.ResetPassword;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -94,5 +95,11 @@ public class LoginActivity extends AppCompatActivity {
                 }
             }
         });
+    }
+
+    public void resetPassword(View view) {
+        Intent intent=new Intent(LoginActivity.this, ResetPassword.class);
+        startActivity(intent);
+        finish();
     }
 }
