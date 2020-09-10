@@ -28,10 +28,10 @@ FirebaseAuth firebaseAuth;
         firebaseAuth=FirebaseAuth.getInstance();
       firebaseUser=firebaseAuth.getCurrentUser();
     }
-
+//editChangePassword connected to button for changing password
     public void editChangePassword(View view) {
         password=pass.getText().toString();
-
+/*inbuilt method for changing password*/
 firebaseUser.updatePassword(password).addOnSuccessListener(new OnSuccessListener<Void>() {
     @Override
     public void onSuccess(Void aVoid) {

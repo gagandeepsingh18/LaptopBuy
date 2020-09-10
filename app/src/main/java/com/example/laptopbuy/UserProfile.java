@@ -30,7 +30,7 @@ public class UserProfile extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_profile);
-
+//getting intent from main activity
         Intent intent=getIntent();
         email2=intent.getStringExtra("emailIntent");
 
@@ -41,7 +41,7 @@ public class UserProfile extends AppCompatActivity {
         button=(Button) findViewById(R.id.buttonSave);
 
 
-
+/*fetching data from firestore*/
         cl.collection("userProfile").document(email2).get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
             @Override
             public void onSuccess(DocumentSnapshot documentSnapshot) {
@@ -65,7 +65,7 @@ public class UserProfile extends AppCompatActivity {
 
     }
 
-
+/*saveProfile to save profile to firestore*/
     public void saveProfile(View view) {
 
         String userName=name.getText().toString();
