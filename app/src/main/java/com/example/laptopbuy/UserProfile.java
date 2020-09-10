@@ -18,15 +18,20 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class UserProfile extends AppCompatActivity {
-    EditText name,email,phone,address;
+    EditText name;
+    EditText email;
+    EditText phone;
+    EditText address;
     Button button;
+    String email2;
     private FirebaseFirestore cl=FirebaseFirestore.getInstance();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_profile);
 
-
+        Intent intent=getIntent();
+        email2=intent.getStringExtra("emailIntent");
 
         name=(EditText) findViewById(R.id.editName);
         email=(EditText) findViewById(R.id.editEmail);
@@ -36,12 +41,12 @@ public class UserProfile extends AppCompatActivity {
 
 
 
-        cl.collection("Profile").document("First Profile").get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+        cl.collection("userProfile").document(email2).get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
             @Override
             public void onSuccess(DocumentSnapshot documentSnapshot) {
                 String userName=documentSnapshot.getString("name");
                 String userEmail=documentSnapshot.getString("email");
-                String userPhone=documentSnapshot.getString("Phone");
+                String userPhone=documentSnapshot.getString("phone");
                 String userAddress=documentSnapshot.getString("address");
                 name.setText(userName);
                 email.setText(userEmail);
@@ -71,7 +76,7 @@ public class UserProfile extends AppCompatActivity {
         map.put("email",userEmail);
         map.put("phone",userPhone);
         map.put("address",userAddress);
-        cl.collection("Profile").document("First Profile").set(map).addOnSuccessListener(new OnSuccessListener<Void>() {
+        cl.collection("userProfile").document(email2).set(map).addOnSuccessListener(new OnSuccessListener<Void>() {
             @Override
             public void onSuccess(Void aVoid) {
 

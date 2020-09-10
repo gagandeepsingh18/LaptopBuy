@@ -24,7 +24,7 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
-
+String email;
     DrawerLayout drawerLayout;
 
     FragmentManager manager;
@@ -38,6 +38,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
        Toolbar toolbar = findViewById(R.id.mainToolbar);
         setSupportActionBar(toolbar);
+
+
+        Intent intent=getIntent();
+        email=intent.getStringExtra("emailIntent");
 
 
        /** FloatingActionButton fab = findViewById(R.id.fab);
@@ -76,7 +80,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         switch (menuItem.getItemId()){
             case R.id.nav_profile:
-                Intent intent = new Intent(this, UserProfile.class);
+                Intent intent = new Intent(this, UserProfile.class).putExtra("emailIntent",email);
                 startActivity(intent);
                 break;
         }
