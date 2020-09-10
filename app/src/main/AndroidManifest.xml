@@ -11,7 +11,8 @@
         android:roundIcon="@drawable/laptop_buy_logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Gagan.ProductsDetailsActivity"></activity>
+        <activity android:name=".Gagan.SkipActivity"></activity>
+        <activity android:name=".Gagan.ProductsDetailsActivity" />
         <activity android:name=".changepassword" />
         <activity android:name=".ResetPassword" />
         <activity android:name=".PaymentDetails_Activity" />

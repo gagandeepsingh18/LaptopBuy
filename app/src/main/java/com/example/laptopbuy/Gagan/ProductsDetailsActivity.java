@@ -2,6 +2,7 @@ package com.example.laptopbuy.Gagan;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.ComponentName;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -73,7 +74,6 @@ Button cart;
         cart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 SendDataToCart();
             }
         });
