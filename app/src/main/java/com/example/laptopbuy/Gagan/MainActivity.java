@@ -1,15 +1,9 @@
 package com.example.laptopbuy.Gagan;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.view.View;
 
-import com.example.laptopbuy.AboutusActivity;
-import com.example.laptopbuy.AskmeActivity;
-import com.example.laptopbuy.FaqActivity;
-import com.example.laptopbuy.Gagan.ui.home.HomeFragment;
 import com.example.laptopbuy.R;
 import com.example.laptopbuy.UserProfile;
 import com.google.android.material.navigation.NavigationView;

@@ -17,8 +17,9 @@ import com.squareup.picasso.Picasso;
 
 public class ProductsDetailsActivity extends AppCompatActivity {
 ImageView imageView;
-TextView price,name,desc;
-String productPrice, productDescription, productName, productImage;
+TextView price,name,desc, manufacturer, memory, storage, cPU, gPU;
+String productPrice, productDescription, productName, productImage, productManufacturer,
+        productMemory, productStorage,productCPU, productGPU;
 
 Button cart;
 
@@ -32,21 +33,36 @@ Button cart;
         firebaseAuth = FirebaseAuth.getInstance();
         firebaseFirestore = FirebaseFirestore.getInstance();
 
-        imageView = findViewById(R.id.PProductImage);
-        price= findViewById(R.id.PProductPrice);
-        desc= findViewById(R.id.PProductDescription);
-        name= findViewById(R.id.PProductTitle);
-        cart= findViewById(R.id.AddtoCartButton);
+        imageView = findViewById(R.id.ProductDetailsImage);
+        price= findViewById(R.id.ProductDetailsPrice);
+        desc= findViewById(R.id.ProductDetailsDescription);
+        name= findViewById(R.id.ProductDetailsTitle);
+        manufacturer= findViewById(R.id.ProductDetailsManufacturer);
+        memory= findViewById(R.id.ProductDetailsMemory);
+        storage= findViewById(R.id.ProductDetailsStorage);
+        cPU= findViewById(R.id.ProductDetailsCPU);
+        gPU= findViewById(R.id.ProductDetailsGPU);
+        cart= findViewById(R.id.CartButton);
 
         final Bundle bundle = getIntent().getExtras();
         productPrice = bundle.getString("productPrice");
         productDescription = bundle.getString("productDescription");
         productName = bundle.getString("productName");
         productImage = bundle.getString("productImage");
+        productManufacturer = bundle.getString("productManufacturer");
+        productMemory = bundle.getString("productMemory");
+        productStorage = bundle.getString("productStorage");
+        productCPU = bundle.getString("productCPU");
+        productGPU = bundle.getString("productGPU");
 
         name.setText(productName);
-        price.setText(productPrice);
+        price.setText("$"+productPrice);
         desc.setText(productDescription);
+        manufacturer.setText(productManufacturer);
+        memory.setText(productMemory);
+        storage.setText(productStorage);
+        cPU.setText(productCPU);
+        gPU.setText(productGPU);
         Picasso.get().load(productImage).into(imageView);
 
         cart.setOnClickListener(new View.OnClickListener() {
