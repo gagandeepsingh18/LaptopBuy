@@ -30,6 +30,9 @@ import com.google.firebase.firestore.QuerySnapshot;
 
 import java.util.ArrayList;
 import java.util.List;
+/**
+ * THis fragment is used to show products
+ */
 
 public class HomeFragment extends Fragment {
 
@@ -78,7 +81,9 @@ public class HomeFragment extends Fragment {
 
         ProductDataLoadingFunction();
     }
-
+    /**
+     * THis method is to get data from firestore
+     */
     public void ProductDataLoadingFunction() {
 
         firebaseFirestore.collection("Products").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {

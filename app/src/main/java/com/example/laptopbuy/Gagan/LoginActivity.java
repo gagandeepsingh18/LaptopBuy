@@ -25,6 +25,9 @@ public class LoginActivity extends AppCompatActivity {
     String Email, Password;
 
     private FirebaseAuth firebaseAuth;
+    /**
+     *  Firebase Authentication Object is declared to access Firebase Authentication service
+     */
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,9 +35,6 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         firebaseAuth = FirebaseAuth.getInstance();
-        /**
-         *  Firebase Authentication Object is declared to access Firebase Authentication service
-         */
 
         Login = findViewById(R.id.LoginButton);
         Register = findViewById(R.id.RegistrationPageButton);
@@ -80,12 +80,16 @@ public class LoginActivity extends AppCompatActivity {
 
 
     }
-
+    /**
+     * Function to go to registration
+     */
     private void RegisterFunction() {
         Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
         startActivity(intent);
     }
-
+    /**
+     * Login Function
+     */
     private void LoginFunction(String email, String  password) {
         firebaseAuth.signInWithEmailAndPassword(email,password).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
             @Override

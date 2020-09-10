@@ -2,6 +2,9 @@ package com.example.laptopbuy.Gagan;
 
 import android.os.Parcel;
 import android.os.Parcelable;
+/**
+ *  Pojo class to get and set data
+ */
 
 public class ModelProducts implements Parcelable {
     String productName, productDescription, productPrice, productManufacturer, productMemory, productStorage, productImage, productCPU, productGPU;

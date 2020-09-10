@@ -19,6 +19,9 @@ import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
+/**
+ * THis adapter is created to get data from the firestore
+ */
 public class AdapterProducts extends RecyclerView.Adapter<AdapterProducts.ProductHolder> {
     String productName, productDescription, productPrice, productManufacturer, productMemory, productStorage, productImage, productCPU, productGPU;
 
@@ -41,6 +44,9 @@ public class AdapterProducts extends RecyclerView.Adapter<AdapterProducts.Produc
         return new ProductHolder(productView);
     }
 
+    /**
+     * THis method is used put data in the fields
+     */
     @Override
     public void onBindViewHolder(@NonNull ProductHolder holder, int position) {
         productName = modelProducts.get(position).getProductName();
@@ -105,7 +111,9 @@ public class AdapterProducts extends RecyclerView.Adapter<AdapterProducts.Produc
         return modelProducts.size();
     }
 
-
+    /**
+     * THis method is used to assign fields
+     */
     public class ProductHolder extends RecyclerView.ViewHolder{
         ImageView productImageView;
         TextView productNameView;

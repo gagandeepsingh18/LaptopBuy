@@ -100,6 +100,9 @@ public class RegisterActivity extends AppCompatActivity {
         });
     }
 
+    /**
+     *  Registration Function
+     */
 
     private void RegisterFunction(String email, String upassword, String cpassword, String fname, String lname) {
         if (upassword.equals(cpassword)) {

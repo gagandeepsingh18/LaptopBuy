@@ -20,6 +20,9 @@ import com.example.laptopbuy.FaqActivity;
 import com.example.laptopbuy.R;
 import com.example.laptopbuy.UserProfile;
 import com.google.android.material.navigation.NavigationView;
+/**
+ *  This activity will allow the user to skip login process
+ */
 
 public class SkipActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
 
