@@ -43,6 +43,8 @@ TextView description,laptopCost,pnm;
             @Override
             public void onClick(View v) {
                 Intent tnt=new Intent(CartForm_Activity.this, AdressDelievery_Activity.class);
+                tnt.putExtra("name",productName);
+                tnt.putExtra("price",productPrice);
                 startActivity(tnt);
                 finish();
             }
@@ -51,12 +53,6 @@ TextView description,laptopCost,pnm;
             @Override
             public void onClick(View v) {
                 ProfileFunction();
-            }
-        });
-        faq.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                FAQFunction();
             }
         });
     }
@@ -70,4 +66,6 @@ TextView description,laptopCost,pnm;
         Intent intent = new Intent(CartForm_Activity.this, FaqActivity.class);
         startActivity(intent);
     }
+
+
 }

@@ -14,6 +14,8 @@
         <activity android:name=".Gagan.ProductsDetailsActivity"></activity>
         <activity android:name=".changepassword" />
         <activity android:name=".ResetPassword" />
+        <activity android:name=".PaymentDetails_Activity" />
+        <activity android:name=".AdressDelievery_Activity" />
         <activity android:name=".CartForm_Activity" />
         <activity android:name=".Gagan.SplashScreen">
             <intent-filter>
