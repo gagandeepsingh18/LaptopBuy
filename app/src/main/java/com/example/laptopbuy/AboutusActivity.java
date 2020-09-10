@@ -16,7 +16,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 public class AboutusActivity extends AppCompatActivity {
-    //Initialize variables
+    //**Initialize variables*/
     private TextView mTextView;
 
     DrawerLayout drawerLayout;
@@ -29,17 +29,17 @@ public class AboutusActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.aboutus);
 
-        //Assign variable
+        //**Assign variable*/
         drawerLayout=findViewById(R.id.drawer_layout);
 
         Intent intent = getIntent();
         startActivity(intent);
-        //getIntent() function to start About Us.
+        //**getIntent() function to start About Us.*/
         mTextView = (TextView) findViewById(R.id.text);
     }
 
     public void clickAboutUs(View view){
-        //Recreate activity
+        //**Recreate activity*/
         recreate();
     }
     public void clickFAQ(View view){
@@ -49,25 +49,25 @@ public class AboutusActivity extends AppCompatActivity {
     public void fb(View view) {
         Intent fbIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.fb)));
         startActivity(fbIntent);
-        //Clickable image. For the time, 'Best Buy' FB' page is used.
+        //**Clickable image. For the time, 'Best Buy' FB' page is used.*/
     }
 
     public void insta(View view) {
         Intent instaIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.insta)));
         startActivity(instaIntent);
-        // A view for redirecting the user to Instagram page. For the time, 'Best Buy' insta page is used.
+        //** A view for redirecting the user to Instagram page. For the time, 'Best Buy' insta page is used.*/
     }
 
     public void twitter(View view) {
         Intent twitterIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.twitter)));
         startActivity(twitterIntent);
-        // A view for redirecting user by pressing the image to twitter account. For the time, 'Best Buy' Twitter page is linked.
+        //** A view for redirecting user by pressing the image to twitter account. For the time, 'Best Buy' Twitter page is linked.*/
     }
 
     public void internet(View view) {
         Intent internetIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.internet)));
         startActivity(internetIntent);
-        // A view for redirecting user to 'Best Buy' Online website.
+        //** A view for redirecting user to 'Best Buy' Online website.*/
     }
 
 }
