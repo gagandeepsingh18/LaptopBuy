@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -54,7 +55,7 @@ public class AdapterProducts extends RecyclerView.Adapter<AdapterProducts.Produc
         try {
             Picasso.get().load(productImage).into(holder.productImageView);
         }catch (Exception exception){
-            Log.d("Picasso", ""+exception);
+            Toast.makeText(context, exception.getMessage(), Toast.LENGTH_SHORT).show();
         }
 
         holder.productNameView.setText(productName);
