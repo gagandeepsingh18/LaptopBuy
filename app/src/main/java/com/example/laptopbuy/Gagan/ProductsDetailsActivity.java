@@ -21,6 +21,8 @@ TextView price,name,desc, manufacturer, memory, storage, cPU, gPU;
 String productPrice, productDescription, productName, productImage, productManufacturer,
         productMemory, productStorage,productCPU, productGPU;
 
+ModelProducts modelProducts;
+
 Button cart;
 
     FirebaseAuth firebaseAuth;
@@ -44,7 +46,10 @@ Button cart;
         gPU= findViewById(R.id.ProductDetailsGPU);
         cart= findViewById(R.id.CartButton);
 
-        final Bundle bundle = getIntent().getExtras();
+
+
+
+       final Bundle bundle = getIntent().getExtras();
         productPrice = bundle.getString("productPrice");
         productDescription = bundle.getString("productDescription");
         productName = bundle.getString("productName");

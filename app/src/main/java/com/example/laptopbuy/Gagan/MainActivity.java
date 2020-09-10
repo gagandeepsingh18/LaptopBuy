@@ -4,6 +4,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 
+import com.example.laptopbuy.AboutusActivity;
+import com.example.laptopbuy.AskmeActivity;
+import com.example.laptopbuy.FaqActivity;
 import com.example.laptopbuy.R;
 import com.example.laptopbuy.UserProfile;
 import com.google.android.material.navigation.NavigationView;
@@ -14,6 +17,7 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
@@ -76,6 +80,26 @@ String email;
             case R.id.nav_profile:
                 Intent intent = new Intent(this, UserProfile.class).putExtra("emailIntent",email);
                 startActivity(intent);
+                break;
+            case R.id.nav_home:
+                Fragment fragment= new HomeFragment();
+                getSupportFragmentManager().beginTransaction().replace(R.id.nav_host_fragment_container, fragment).addToBackStack(null).commit();
+                break;
+            case R.id.nav_search:
+                Fragment fragment1= new SearchFragment();
+                getSupportFragmentManager().beginTransaction().replace(R.id.nav_host_fragment_container, fragment1).addToBackStack(null).commit();
+                break;
+            case R.id.nav_faqs:
+                Intent intent2 = new Intent(this, FaqActivity.class);
+                startActivity(intent2);
+                break;
+            case R.id.nav_contactus:
+                Intent intent3 = new Intent(this, AboutusActivity.class);
+                startActivity(intent3);
+                break;
+            case R.id.nav_ask:
+                Intent intent4 = new Intent(this, AskmeActivity.class);
+                startActivity(intent4);
                 break;
         }
         drawerLayout.closeDrawer(GravityCompat.START);
