@@ -42,15 +42,7 @@ String email;
         email=intent.getStringExtra("emailIntent");
 
 
-       /** FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
 
-                Intent intent = new Intent(MainActivity.this, CartForm_Activity.class);
-                startActivity(intent);
-            }
-        }); */
         drawerLayout= findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.bringToFront();
@@ -72,6 +64,9 @@ String email;
 
 
 
+    /**
+     *  This method is created to maniplate menu options
+     */
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {

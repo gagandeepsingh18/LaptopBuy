@@ -81,6 +81,10 @@ Button cart;
 
     }
 
+    /**
+     *  This method will send data to Cart Activity
+     */
+
     private void SendDataToCart() {
         Intent intent = new Intent(this, CartForm_Activity.class);
         intent.putExtra("name",productName);

@@ -24,6 +24,9 @@ import com.google.firebase.firestore.QuerySnapshot;
 
 import java.util.ArrayList;
 import java.util.List;
+/**
+ * This fragment will allow the user to search the product list
+ */
 
 public class SearchFragment extends Fragment {
 
