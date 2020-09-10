@@ -92,9 +92,9 @@ public class HomeFragment extends Fragment {
                         String productGPU= (String) documentSnapshot.getData().get("productGPU");
 
 
-                        modelProducts.add(new ModelProducts(productName,productDescription,productPrice,productImage,productManufacturer, productMemory, productStorage, productCPU, productGPU));
+                        modelProducts.add(new ModelProducts(productName,productDescription,productPrice,productManufacturer,productMemory, productStorage,productImage,  productCPU, productGPU));
 
-                        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getActivity().getApplicationContext(), RecyclerView.HORIZONTAL, false);
+                        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getActivity().getApplicationContext(), RecyclerView.VERTICAL, false);
                         recyclerView.setLayoutManager(layoutManager);
                         adapterProducts = new AdapterProducts(modelProducts, getActivity());
                         recyclerView.setAdapter(adapterProducts);
