@@ -85,8 +85,14 @@ public class HomeFragment extends Fragment {
                         String productDescription= (String) documentSnapshot.getData().get("productDescription");
                         String productPrice= (String) documentSnapshot.getData().get("productPrice");
                         String productImage= (String) documentSnapshot.getData().get("productImage");
+                        String productManufacturer= (String) documentSnapshot.getData().get("productManufacturer");
+                        String productMemory= (String) documentSnapshot.getData().get("productMemory");
+                        String productStorage= (String) documentSnapshot.getData().get("productStorage");
+                        String productCPU= (String) documentSnapshot.getData().get("productCPU");
+                        String productGPU= (String) documentSnapshot.getData().get("productGPU");
 
-                        modelProducts.add(new ModelProducts(productName,productDescription,productPrice,productImage));
+
+                        modelProducts.add(new ModelProducts(productName,productDescription,productPrice,productImage,productManufacturer, productMemory, productStorage, productCPU, productGPU));
 
                         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getActivity().getApplicationContext(), RecyclerView.HORIZONTAL, false);
                         recyclerView.setLayoutManager(layoutManager);

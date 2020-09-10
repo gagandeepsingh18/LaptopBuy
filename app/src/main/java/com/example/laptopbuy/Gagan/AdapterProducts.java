@@ -1,6 +1,8 @@
 package com.example.laptopbuy.Gagan;
 
 import android.content.Context;
+import android.content.Intent;
+import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -19,9 +21,10 @@ import java.util.List;
 public class AdapterProducts extends RecyclerView.Adapter<AdapterProducts.ProductHolder> {
     String productName, productDescription, productPrice, productManufacturer, productMemory, productStorage, productImage, productCPU, productGPU;
 
-    View.OnClickListener Listener;
+
     List<ModelProducts> modelProducts;
     Context context;
+
 
     public AdapterProducts(List<ModelProducts> modelProducts, Context context) {
         this.modelProducts = modelProducts;
@@ -57,6 +60,42 @@ public class AdapterProducts extends RecyclerView.Adapter<AdapterProducts.Produc
         holder.productNameView.setText(productName);
         holder.productDescriptionView.setText(productDescription);
         holder.productPriceView.setText("Price: $"+productPrice);
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            String productName, productDescription, productPrice, productManufacturer, productMemory, productStorage, productImage, productCPU, productGPU;
+
+            @Override
+            public void onClick(View v) {
+
+
+                productName = modelProducts.get(position).getProductName();
+                productDescription = modelProducts.get(position).getProductDescription();
+                productPrice = modelProducts.get(position).getProductPrice();
+                productManufacturer = modelProducts.get(position).getProductManufacturer();
+                productMemory = modelProducts.get(position).getProductMemory();
+                productStorage = modelProducts.get(position).getProductStorage();
+                productImage = modelProducts.get(position).getProductImage();
+                productCPU = modelProducts.get(position).getProductCPU();
+                productGPU = modelProducts.get(position).getProductGPU();
+
+                Bundle bundle= new Bundle();
+                bundle.putString("productName", productName);
+                bundle.putString("productDescription", productDescription);
+                bundle.putString("productManufacturer", productManufacturer);
+                bundle.putString("productPrice", productPrice);
+                bundle.putString("productMemory", productMemory);
+                bundle.putString("productStorage", productStorage);
+                bundle.putString("productImage", productImage);
+                bundle.putString("productCPU", productCPU);
+                bundle.putString("productGPU", productGPU);
+
+                Intent intent = new Intent(context, ProductsDetailsActivity.class);
+                intent.putExtras(bundle);
+                context.startActivity(intent);
+
+
+            }
+        });
     }
 
     @Override
@@ -77,13 +116,9 @@ public class AdapterProducts extends RecyclerView.Adapter<AdapterProducts.Produc
             productDescriptionView = itemView.findViewById(R.id.ProductDescription);
             productPriceView = itemView.findViewById(R.id.ProductPrice);
 
-            //itemView.setTag(this);
 
-          //  itemView.setOnClickListener(Listener);
         }
     }
 
-  //  public void setOnClickListener(View.OnClickListener onClickListener){
-//        Listener = onClickListener;
-  //  }
+
 }

@@ -6,12 +6,7 @@ import android.os.Parcelable;
 public class ModelProducts implements Parcelable {
     String productName, productDescription, productPrice, productManufacturer, productMemory, productStorage, productImage, productCPU, productGPU;
 
-    public ModelProducts(String productName, String productDescription, String productPrice, String productImage) {
-        this.productName = productName;
-        this.productDescription = productDescription;
-        this.productPrice = productPrice;
-        this.productImage = productImage;
-    }
+
 
     protected ModelProducts(Parcel in) {
         productName = in.readString();
@@ -109,7 +104,7 @@ public class ModelProducts implements Parcelable {
         this.productGPU = productGPU;
     }
 
-  /**  public ModelProducts(String productName, String productDescription, String productPrice, String productManufacturer, String productMemory, String productStorage, String productImage, String productCPU, String productGPU) {
+  public ModelProducts(String productName, String productDescription, String productPrice, String productManufacturer, String productMemory, String productStorage, String productImage, String productCPU, String productGPU) {
         this.productName = productName;
         this.productDescription = productDescription;
         this.productPrice = productPrice;
@@ -119,7 +114,7 @@ public class ModelProducts implements Parcelable {
         this.productImage = productImage;
         this.productCPU = productCPU;
         this.productGPU = productGPU;
-    } */
+    }
 
     @Override
     public int describeContents() {
