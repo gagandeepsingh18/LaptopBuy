@@ -101,6 +101,10 @@ String email;
                 Intent intent4 = new Intent(this, AskmeActivity.class);
                 startActivity(intent4);
                 break;
+            case R.id.nav_logout:
+                Intent intent5 = new Intent(this, LoginActivity.class);
+                startActivity(intent5);
+                break;
         }
         drawerLayout.closeDrawer(GravityCompat.START);
         return true;
