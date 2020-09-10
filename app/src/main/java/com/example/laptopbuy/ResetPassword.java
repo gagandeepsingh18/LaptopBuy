@@ -25,9 +25,14 @@ String stEmail;
         email=findViewById(R.id.editResetPasswordEmail);
 
     }
-
+/*Reset password method*/
     public void resetYourPassword(View view) {
 stEmail=email.getText().toString();
+
+
+
+//Sending reset link on entered email by sendPasswordResetEmail method
+
 firebaseAuth.sendPasswordResetEmail(stEmail).addOnSuccessListener(new OnSuccessListener<Void>() {
     @Override
     public void onSuccess(Void aVoid) {
@@ -38,7 +43,7 @@ firebaseAuth.sendPasswordResetEmail(stEmail).addOnSuccessListener(new OnSuccessL
     public void onFailure(@NonNull Exception e) {
 
     }
-});
+});        //directing to LoginActivity class from Reset password by intent
         Intent intent=new Intent(ResetPassword.this, LoginActivity.class);
     }
 }

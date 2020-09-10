@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.example.laptopbuy.Gagan.MainActivity;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.firestore.DocumentSnapshot;
@@ -87,9 +88,15 @@ public class UserProfile extends AppCompatActivity {
 
             }
         });
-        Intent intent=new Intent(this,EditUserProfile.class);
+        Intent intent=new Intent(UserProfile.this, MainActivity.class);
         startActivity(intent);
         finish();
 
+    }
+
+    public void changePassword(View view) {
+        Intent intent=new Intent(UserProfile.this,changepassword.class);
+        startActivity(intent);
+        finish();;
     }
 }
