@@ -1,4 +1,4 @@
-package com.example.laptopbuy.Gagan.ui.home;
+package com.example.laptopbuy.Gagan;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
