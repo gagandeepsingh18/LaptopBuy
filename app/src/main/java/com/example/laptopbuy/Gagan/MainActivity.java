@@ -97,7 +97,7 @@ String email;
                 Intent intent3 = new Intent(this, AboutusActivity.class);
                 startActivity(intent3);
                 break;
-            case R.id.nav_ask:
+            case R.id.nav_aboutus:
                 Intent intent4 = new Intent(this, AskmeActivity.class);
                 startActivity(intent4);
                 break;

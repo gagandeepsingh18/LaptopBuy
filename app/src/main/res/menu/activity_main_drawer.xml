@@ -22,9 +22,6 @@
             android:icon="@drawable/ic_menu_slideshow"
             android:title="@string/menu_profile" />
 
-        <item android:title="MORE">
-            <menu>
-
         <item
             android:id="@+id/nav_faqs"
             android:icon="@drawable/ic_faqs"
@@ -40,12 +37,5 @@
             android:icon="@drawable/ic_aboutus"
             android:title="About Us"
             />
-                <item
-                    android:id="@+id/nav_changePassword"
-                    android:icon="@drawable/ic_aboutus"
-                    android:title="About Us"
-                    />
-            </menu>
-        </item>
     </group>
 </menu>
