@@ -60,15 +60,19 @@ Button cart;
     }
 
     private void SendDataToCart() {
-        Bundle cartbundle= new Bundle();
+      /*  Bundle cartbundle= new Bundle();
         cartbundle.putString("productName", productName);
         cartbundle.putString("productDescription", productDescription);
         cartbundle.putString("productPrice", productPrice);
         cartbundle.putString("productImage", productImage);
-
+*/
 
         Intent intent = new Intent(this, CartForm_Activity.class);
-        intent.putExtras(cartbundle);
+        intent.putExtra("name",productName);
+        intent.putExtra("productDescription",productDescription);
+        intent.putExtra("productPrice",productPrice);
+        intent.putExtra("productImage",productImage);
         startActivity(intent);
+        finish();
     }
 }
